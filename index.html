@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeechToTextApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+        }
+
+        p{
+            text-align: center;
+            font-family: 'Courgette', cursive;
+            line-height: 2;
+        }
+
+        textarea{
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            height: 15vh;
+            width: 70%;
+            border: 2px solid black;
+        }
+        h3, h2{
+            font-size: 15px;
+            font-family: 'Courgette', cursive;
+            font-weight: 200;
+        }
+        button{
+            margin: 0 auto;
+            display: block;
+            position: center;
+            margin-top: 2rem;
+            background-color: rgb(201, 17, 17);
+            color: white;
+            font-family: 'Courgette', cursive;
+        }
+        body{
+            background-color:rgb(224, 220, 220)
+        }
+
+        #output {
+          height: 17vh;
+          width: 70%;
+          border: 2px solid black;
+          background-color: white;
+          justify-content: center;
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+          color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>The Bard of Avon Translator</h1>
+    <p>William Shakespeare, also known as "the Bard of Avon" invented many words and his style of narration in many ways was unique to his time. His ever popular works ( dramas and poems ) makes his language style live even today.</p> 
+    <p>This translator takes your speech in English as input and converts to Shakespearean English text. Try It!</p>
+    <section>
+        <h2>Instructions:</h2>
+        <h3>Click on the 'Start' button above and say what you want to translate to Shakespearean English. The text appearing in the box right above the two buttons, would be considered for translation. </h3>
+        <h3>After you complete speaking, click on the 'Translate' button.</h3>
+        <textarea id="text-input"></textarea>
+    </section>
+    <button id="btn-start">Start</button>
+    <button id="btn-translate">Translate</button>
+    <div id="output"></div>
+    <script src="script.js" type="text/javascript"></script>
+    
+</body>
+</html>
